@@ -57,10 +57,10 @@ public class WebController {
 	//	return webService.showLogin();
 		//webService.showLogin();
 //	}
-	@GetMapping("/Web/login/{username}")
+	@GetMapping("/Web/login")
 	//@ResponseBody
-	public String loging(@RequestBody Web web,@PathVariable String username,@RequestParam("password") String password){
-		return webService.loging(web,username,password);//(username,password);
+	public String loging(@RequestBody Web web){
+		return webService.loging(web);//(username,password);
 	}
 	
 }
