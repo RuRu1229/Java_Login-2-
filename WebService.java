@@ -74,7 +74,7 @@ public class WebService {
 		return "login";
 	}
 
-	public String loging(Web web,String username,String password){
+	public String loging(Web web){
 		Optional<Web> webOptional = webRepository.findById(username);
 		//System.out.println(webOptional);
 		//String web = webOptional.get().getUsername();
@@ -89,7 +89,7 @@ public class WebService {
 	//		System.out.print(webOpti);
 			if(pass.equals(password)) {
 				
-				return "HI";
+				return "susses";
 			//
 				}			
 		}
@@ -108,7 +108,7 @@ public class WebService {
 		//if(web != null) {
 		//return "clear";
 	//	}
-		return "HELLO";
+		return "filad";
 	//	return null;
 	}
 }
